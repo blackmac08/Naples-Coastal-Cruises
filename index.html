@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naples Coastal Cruising | Eco Sightseeing & Backwater Tours</title>
+  <meta name="description" content="Private coastal backwater eco cruises and sightseeing tours in Naples & Bonita Springs. USCG-licensed captains, calm-water routes, wildlife viewing, and sunset cruises. Up to 6 passengers." />
+
+  <link rel="icon" type="image/png" href="/assets/favicon-32.png" />
+  <link rel="preload" as="image" href="/assets/boat-hero.jpg" />
+  <link rel="preload" as="image" href="/assets/naples-coastal-cruising-logo.png" />
+
+  <style>
+    :root{
+      --bg:#f7fafb;
+      --card:#ffffff;
+      --text:#142027;
+      --muted:#4a5b66;
+      --line:#e6edf2;
+      --accent:#0a6b78;
+      --accent2:#0f8a67;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.35}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 1rem}
+    header{
+      position:sticky;top:0;z-index:50;background:rgba(247,250,251,.9);
+      backdrop-filter:saturate(180%) blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
+    .brand{display:flex;align-items:center;gap:.7rem;font-weight:900;letter-spacing:.2px}
+    .brand img{height:28px;width:auto;display:block}
+    .links{display:flex;flex-wrap:wrap;gap:.9rem;font-weight:600;color:var(--muted);font-size:.95rem}
+    .btn{
+      display:inline-block;padding:.65rem 1rem;border-radius:999px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:white;font-weight:800;border:0;box-shadow:var(--shadow)
+    }
+
+    .hero{padding:2.0rem 0 1.2rem}
+    .heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.2rem;align-items:stretch}
+    @media (max-width:900px){.heroGrid{grid-template-columns:1fr}}
+    .heroCard{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);overflow:hidden;
+    }
+
+    /* Use your boat photo as the hero image */
+    .heroImg{
+      min-height:340px;background:url("/assets/boat-hero.jpg") center/cover no-repeat;
+    }
+
+    .heroCopy{padding:1.4rem}
+    .logoBlock{display:flex;align-items:center;gap:.8rem;margin:0 0 .6rem}
+    .logoBlock img{height:44px;width:auto;display:block}
+    h1{margin:.2rem 0 .7rem;font-size:2rem;line-height:1.12}
+    .sub{color:var(--muted);font-size:1.06rem;margin:0 0 1.1rem}
+    .pillRow{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 0}
+    .pill{
+      border:1px solid var(--line);background:#fdfefe;border-radius:999px;
+      padding:.4rem .65rem;font-weight:700;color:#27404a;font-size:.9rem
+    }
+
+    section{padding:1.2rem 0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:1.2rem;
+    }
+    .card h2{margin:.1rem 0 .8rem;font-size:1.35rem}
+    .card p{margin:.35rem 0;color:var(--muted)}
+    .span7{grid-column:span 7}
+    .span5{grid-column:span 5}
+    .span6{grid-column:span 6}
+    .span12{grid-column:span 12}
+    @media (max-width:900px){
+      .span7,.span5,.span6{grid-column:span 12}
+    }
+
+    .tourList{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem}
+    @media (max-width:700px){.tourList{grid-template-columns:1fr}}
+    .tour{
+      border:1px solid var(--line);border-radius:14px;padding:1rem;background:#fbfdff
+    }
+    .tourTop{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+    .tour h3{margin:0;font-size:1.05rem}
+    .price{font-weight:900}
+    .meta{margin:.5rem 0 0;color:var(--muted);font-size:.95rem}
+
+    .fine{font-size:.92rem;color:var(--muted)}
+    .kicker{font-weight:900;color:#27404a;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}
+    .hr{height:1px;background:var(--line);margin:1rem 0}
+
+    form{display:grid;gap:.75rem}
+    label{font-weight:800;font-size:.92rem}
+    input,select,textarea{
+      width:100%;padding:.7rem .8rem;border-radius:12px;border:1px solid var(--line);
+      font:inherit;background:#fff
+    }
+    textarea{min-height:110px;resize:vertical}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+    @media (max-width:700px){.two{grid-template-columns:1fr}}
+    footer{padding:2rem 0;color:var(--muted);border-top:1px solid var(--line);margin-top:1.2rem}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <img src="/assets/naples-coastal-cruising-logo.png" alt="Naples Coastal Cruising" />
+      </div>
+      <nav class="links">
+        <a href="#tours">Tours</a>
+        <a href="#areas">Areas</a>
+        <a href="#boat">The Boat</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book" class="btn">Book</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="heroGrid">
+      <div class="heroCard">
+        <div class="heroImg" role="img" aria-label="Your tour boat"></div>
+      </div>
+      <div class="heroCard">
+        <div class="heroCopy">
+          <div class="logoBlock">
+            <img src="/assets/naples-coastal-cruising-logo.png" alt="Naples Coastal Cruising" />
+          </div>
+          <div class="kicker">Private coastal backwater eco cruises</div>
+          <h1>Eco Sightseeing & Backwater Cruises in Naples & Bonita Springs</h1>
+          <p class="sub">
+            Calm-water routes with a USCG-licensed captain. Wildlife viewing, scenic canals, mangroves, and unforgettable sunsets—always private for your group (up to 6 passengers).
+          </p>
+          <a class="btn" href="#book">Check availability & request a booking</a>
+          <div class="pillRow" aria-label="highlights">
+            <span class="pill">USCG-licensed captains</span>
+            <span class="pill">Backwater & estuary routes</span>
+            <span class="pill">Wildlife & scenery focused</span>
+            <span class="pill">100% private • up to 6</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tours">
+    <div class="grid">
+      <div class="card span7">
+        <h2>Tour Options & Rates</h2>
+        <p>Choose a cruise style—eco sightseeing, backwater exploration, or sunset views. Custom itineraries available based on tides, wind, and your group’s interests.</p>
+        <div class="hr"></div>
+        <div class="tourList">
+          <div class="tour">
+            <div class="tourTop">
+              <h3>2-Hour Eco Sightseeing Cruise</h3>
+              <div class="price">$500</div>
+            </div>
+            <div class="meta">Scenic coastal backwaters, mangroves, and canals • Great for first-timers</div>
+          </div>
+          <div class="tour">
+            <div class="tourTop">
+              <h3>3-Hour Backwater Explorer</h3>
+              <div class="price">$700</div>
+            </div>
+            <div class="meta">More range + more wildlife opportunities • Ideal for photographers</div>
+          </div>
+          <div class="tour">
+            <div class="tourTop">
+              <h3>2-Hour Sunset Sightseeing</h3>
+              <div class="price">$600</div>
+            </div>
+            <div class="meta">Golden hour cruising with the best sunset vantage points available that day</div>
+          </div>
+          <div class="tour">
+            <div class="tourTop">
+              <h3>Private Custom Charter</h3>
+              <div class="price">Custom</div>
+            </div>
+            <div class="meta">Special occasions, proposals, family days, or “show us the hidden spots” cruises</div>
+          </div>
+        </div>
+        <p class="fine" style="margin-top:1rem;">
+          All trips are private (never shared with strangers). Routes depend on conditions and captain discretion for safety.
+        </p>
+      </div>
+
+      <div class="card span5" id="areas">
+        <h2>Where We Cruise</h2>
+        <p>Serving Naples & Bonita Springs with a focus on calm-water, backwater, and estuary sightseeing.</p>
+        <div class="hr"></div>
+        <p><strong>Common areas:</strong></p>
+        <p class="fine" style="margin-top:.35rem;">
+          Cocohatchee River backwaters • Little Hickory Bay • Wiggins Pass & nearby waterways • Delnor-Wiggins area •
+          local canals and mangrove shorelines (conditions permitting)
+        </p>
+        <div class="hr"></div>
+        <p class="fine">
+          Meeting/embarkation details are provided after your request. Parking can be limited—carpooling is recommended.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="boat">
+    <div class="grid">
+      <div class="card span6">
+        <h2>The Boat</h2>
+        <p>
+          A stable, spacious <strong>covered pontoon tour boat</strong> designed for comfortable sightseeing.
+          Enjoy shaded seating, Bluetooth audio, a cooler with ice, and easy boarding.
+        </p>
+        <p class="fine">
+          We carry up to <strong>6 passengers</strong> in compliance with USCG passenger-for-hire limits for this operation.
+        </p>
+      </div>
+      <div class="card span6">
+        <h2>What’s Included</h2>
+        <p class="fine">• Cooler with ice • Bottled water • Bluetooth music • USCG-required safety gear</p>
+        <p class="fine">Bring sun protection, snacks/drinks, beachwear, bug spray, and a light layer for evenings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="grid">
+      <div class="card span12">
+        <h2>FAQ</h2>
+        <p><strong>Are cruises private or shared?</strong><br/>All trips are completely private—your group only.</p>
+        <p><strong>How many people can we bring?</strong><br/>Up to 6 passengers. No exceptions.</p>
+        <p><strong>Weather policy?</strong><br/>If the captain cancels for safety, you can reschedule or receive a full refund.</p>
+        <p><strong>Is there a bathroom?</strong><br/>There is an emergency-use option onboard, but we recommend using shore facilities before departure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="grid">
+      <div class="card span7">
+        <h2>Check Availability</h2>
+        <p>
+          View open time slots on our live calendar, then submit a booking request.
+          (Anything blank is generally open.)
+        </p>
+        <p><a href="/availability">Open the Availability Calendar →</a></p>
+        <p class="fine">
+          A booking is confirmed once you receive confirmation and your deposit has been paid.
+        </p>
+      </div>
+
+      <div class="card span5">
+        <h2>Request a Booking</h2>
+
+        <!-- Netlify form-compatible -->
+        <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="booking" />
+          <p style="display:none">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="two">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" autocomplete="tel" required />
+            </div>
+          </div>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+
+          <div class="two">
+            <div>
+              <label for="date">Desired Date</label>
+              <input id="date" name="desired_date" type="date" required />
+            </div>
+            <div>
+              <label for="timeOfDay">Requested Time of Day</label>
+              <select id="timeOfDay" name="time_of_day" required>
+                <option value="">Select…</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Specific Time (notes)</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="tourType">Tour Type</label>
+          <select id="tourType" name="tour_type" required>
+            <option value="">Select…</option>
+            <option>2-Hour Eco Sightseeing Cruise</option>
+            <option>3-Hour Backwater Explorer</option>
+            <option>2-Hour Sunset Sightseeing</option>
+            <option>Private Custom Charter</option>
+          </select>
+
+          <label for="notes">Notes / Detailed Request</label>
+          <textarea id="notes" name="notes" placeholder="Group size (max 6), any kids, interests (wildlife, mansions, mangroves, sunset), and any timing preferences."></textarea>
+
+          <button class="btn" type="submit">Send Booking Request</button>
+          <p class="fine" style="margin:.5rem 0 0">
+            Email: <a href="mailto:info@naplescoastalcruising.com">info@naplescoastalcruising.com</a><br/>
+            Phone: <a href="tel:+12393178454">(239) 317-8454</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="fine">
+        © <span id="y"></span> Naples Coastal Cruising. All rights reserved. • Naples, FL
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
